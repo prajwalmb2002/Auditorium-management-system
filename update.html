@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Form Styling */
+        body{         background-color: #fde7ff;
+   }
+        form {
+            width: 30%;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #ccc;
+        }
+        /* Form Label Styling */
+        label {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+        /* Form Input Styling */
+        input[type="text"], input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1.2em;
+        }
+        /* Submit Button Styling */
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="update.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" size="5">
+        <label for="hallid">Hall ID</label>
+        <input type="text" id="hallid" name="hallid" size="5">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" size="5">
+        <label for="start_time">Start Time</label>
+        <input type="time" id="start_time" name="start_time" size="5">
+        <label for="updated_date">Updated Date</label>
+        <input type="date" id="updated_date" name="updated_date" size="5">
+        <label for="updated_start_time">Updated Start Time</label>
+        <input type="time" id="updated_start_time" name="updated_start_time" size="5">
+        <label for="updated_end_time">Updated End Time</label>
+        <input type="time" id="updated_end_time" name="updated_end_time" size="5">
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
+
+
